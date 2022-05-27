@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakout game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <div class="border">
+        <canvas id = "mainGame" width="800" height="600" style="border: 1px
+        solid black;"
+      </div>
+    </center>
+    <script>
+      const CANVAS_WIDTH = 800;
+      const CANVAS_HEIGHT = 600;
+
+      const ctx = document.getElementById("mainGame").getContext("2d");
+    </script>
+    <script src="js/ball.js"></script>
+    <script src="js/paddle.js"></script>
+    <script src="js/brick.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
