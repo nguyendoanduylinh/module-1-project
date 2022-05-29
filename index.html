@@ -14,15 +14,33 @@
         solid black;"
       </div>
     </center>
+    <center>
+      <h1>Your Score: <span id="result">0</span></h1>
+    </center>
     <script>
+      //canvas
       const CANVAS_WIDTH = 800;
       const CANVAS_HEIGHT = 600;
-
       const ctx = document.getElementById("mainGame").getContext("2d");
+
+      //initial paddle
+      const PADDLE_WIDTH = 120;
+      const PADDLE_HEIGHT = 15;
+      ctx.beginPath();
+      ctx.rect(
+        CANVAS_WIDTH / 2 - PADDLE_WIDTH / 2,
+        CANVAS_HEIGHT - PADDLE_HEIGHT - 10,
+        PADDLE_WIDTH,
+        PADDLE_HEIGHT
+      );
+      ctx.stroke();
+      ctx.closePath();
     </script>
-    <script src="js/ball.js"></script>
+
     <script src="js/paddle.js"></script>
+    <script src="js/ball.js"></script>
     <script src="js/brick.js"></script>
+    <script src="js/inputHandler.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
